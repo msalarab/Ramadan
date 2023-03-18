@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ramadan</string>
+    <string name="netherlands_den_haag">Netherlands, Den Haag</string>
+    <string name="info">info</string>
 </resources>
