@@ -17,7 +17,30 @@
         app:menu="@menu/app_bar"
         app:navigationIcon="@drawable/close_circle" />
 
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:src="@drawable/location"
+        app:layout_constraintEnd_toStartOf="@+id/location_title"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar" />
 
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/netherlands_den_haag"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/location_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_icon"
+        app:layout_constraintTop_toTopOf="@+id/location_icon" />
 
     <!--    <com.airbnb.lottie.LottieAnimationView-->
     <!--        android:layout_width="match_parent"-->
