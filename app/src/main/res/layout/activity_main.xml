@@ -42,16 +42,16 @@
         app:layout_constraintStart_toEndOf="@+id/location_icon"
         app:layout_constraintTop_toTopOf="@+id/location_icon" />
 
-    <!--    <com.airbnb.lottie.LottieAnimationView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        app:lottie_loop="true"-->
-    <!--        app:lottie_autoPlay="true"-->
-    <!--        app:lottie_rawRes="@raw/stars"-->
-    <!--        app:lottie_repeatMode="restart"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_size_stars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_title"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/white"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/stars"
+        app:lottie_repeatMode="restart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
