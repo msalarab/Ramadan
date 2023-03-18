@@ -2,4 +2,11 @@
     <string name="app_name">Ramadan</string>
     <string name="netherlands_den_haag">Netherlands, Den Haag</string>
     <string name="info">info</string>
+    <string name="today">Today</string>
+    <string name="date">March 23, 2023</string>
+    <string name="fajer">Fajer</string>
+    <string name="time">05:36 (AM)</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="noon">Noon</string>
+    <string name="ramdan_evening">Ramadan 2023 evening in the Netherlands</string>
 </resources>
