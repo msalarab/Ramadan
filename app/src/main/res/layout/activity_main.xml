@@ -83,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_small"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/today"
         android:textColor="@color/white"
@@ -94,19 +95,20 @@
         android:id="@+id/text_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_tiny"
         android:fontFamily="@font/poppins"
         android:text="@string/date"
         android:textColor="@color/white"
         android:textSize="@dimen/text_normal"
-        app:layout_constraintStart_toStartOf="@+id/text_today"
-        app:layout_constraintTop_toBottomOf="@+id/text_today" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_today"
+        app:layout_constraintStart_toEndOf="@+id/text_today" />
 
     <LinearLayout
         android:id="@+id/card1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_normal"
-        android:layout_marginTop="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_small"
         android:layout_marginEnd="@dimen/spacing_normal"
         android:background="@drawable/card_background"
         app:layout_constraintEnd_toEndOf="parent"
