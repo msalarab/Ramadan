@@ -10,4 +10,6 @@
     <color name="dark_blue">#100D2A</color>
     <color name="light_blue">#282843</color>
     <color name="background_card_color">#1AFFFFFF</color>
+    <color name="purple">#6967A4</color>
+    <color name="light_purple">#A5A3F3</color>
 </resources>

@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
@@ -43,14 +44,14 @@
         app:layout_constraintTop_toTopOf="@+id/location_icon" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottieAnimationView"
+        android:id="@+id/stars"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_size_stars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tool_bar"
         app:lottie_autoPlay="true"
-        app:lottie_colorFilter="@color/white"
+        app:lottie_colorFilter="@color/light_purple"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/stars"
         app:lottie_repeatMode="restart" />
@@ -61,21 +62,33 @@
         android:layout_height="@dimen/big_circle_size"
         android:alpha="0.1"
         android:src="@drawable/white_circle"
-        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintBottom_toBottomOf="@+id/stars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+        app:layout_constraintTop_toBottomOf="@+id/stars" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/helal_size"
+        android:layout_height="@dimen/helal_size"
+        android:rotation="270"
+        android:src="@drawable/helal"
+        app:layout_constraintBottom_toBottomOf="@+id/large_circle"
+        app:layout_constraintEnd_toEndOf="@+id/large_circle"
+        app:layout_constraintStart_toStartOf="@+id/large_circle"
+        app:layout_constraintTop_toTopOf="@+id/large_circle" />
 
     <ImageView
         android:id="@+id/large_circle"
         android:layout_width="@dimen/large_circle_size"
         android:layout_height="@dimen/large_circle_size"
-        android:alpha="0.15"
+        android:alpha="0.1"
         android:src="@drawable/white_circle"
-        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintBottom_toBottomOf="@+id/stars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+        app:layout_constraintTop_toBottomOf="@+id/stars" />
 
 
     <TextView
@@ -755,4 +768,5 @@
             android:textSize="@dimen/text_normal" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
